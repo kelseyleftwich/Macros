@@ -1,22 +1,28 @@
+<p>
+	<%= link_to("Add Meal", {:action => 'new'}, :class => 'btn btn-primary') %>
+</p>
 <table class="table table-striped">
 	<thead>
 
 		<tr>
 			<th>Date</th>
 			<th>Meal</th>
+			<th>Type</th>
 			<th>Macros</th>
 			<th>&nbsp;</th>
 		</tr>
 	</thead>
 	<tbody>
+		<% @meals.each do |meal| %>
 		<tr>
-			<td>3/10/2016</td>
-			<td>Strawberry smoothie</td>
+			<td>[Date]</td>
+			<td><%= meal.name %></td>
+			<td><%= meal.mealtype %></td>
 			<td>
 				<ul>
-					<li>Carbs: 21 grams</li>
-					<li>Protein: 32 grams</li>
-					<li>Fat: 8 grams</li>
+					<li>Carbs: </li>
+					<li>Protein: </li>
+					<li>Fat: </li>
 				</ul>
 			</td>
 			<td>
@@ -24,20 +30,6 @@
 				<a href="#" class="btn btn-danger">Delete</a>
 			</td>
 		</tr>
-		<tr>
-			<td>3/10/2016</td>
-			<td>Beet Salad</td>
-			<td>
-				<ul>
-					<li>Carbs: 30 grams</li>
-					<li>Protein: 10 grams</li>
-					<li>Fat: 0 grams</li>
-				</ul>
-			</td>
-			<td>
-				<a href="#" class="btn btn-default">Edit</a>
-				<a href="#" class="btn btn-danger">Delete</a>
-			</td>
-		</tr>
+		<% end %>
 	</tbody>
 </table>

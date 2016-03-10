@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160310204037) do
+ActiveRecord::Schema.define(version: 20160310211212) do
 
   create_table "meals", force: :cascade do |t|
     t.string   "name",       limit: 25
-    t.string   "type",       limit: 255, default: "Snack", null: false
+    t.string   "mealtype",   limit: 255, default: "Snack", null: false
     t.datetime "created_at",                               null: false
     t.datetime "updated_at",                               null: false
   end

@@ -1,2 +1,13 @@
-<h1>Meals#new</h1>
-<p>Find me in app/views/meals/new.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<h2>Add Meal</h2>
+
+<div>
+	<%= form_for(:meal, :url => {:action => 'create'}) do |f| %>
+		<%= render(:partial => "form", :locals => {:f => f}) %>
+		<div class="form-buttons">
+			<%= submit_tag("Add meal") %>
+		</div>
+
+	<% end %>
+</div>
