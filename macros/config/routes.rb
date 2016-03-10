@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'meals/index'
+
+  get 'meals/delete'
+
+  get 'meals/edit'
+
+  get 'meals/new'
+
+  get 'meals/show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

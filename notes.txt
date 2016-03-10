@@ -10,3 +10,21 @@ Concerns itself with:
     + bundler figures out the dependencies
 - gemfile.lock
     + tree of gems and dependencies
+    + created by bundler
+    + do not edit!
+$ bundle install
+- takes gemfile and creates gemfile.lock
+
+Accessing project
+$ rails s
+localhost:3000
+- must set database config (config > database.yml)
+
+Generate controller and view
+$ rails generate controller [name] [views]
+
+Weird GEM problem
+- comment out coffee-rails and add coffee-script-source
+#gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-script-source', '1.8.0'
+
