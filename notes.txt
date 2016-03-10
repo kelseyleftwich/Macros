@@ -1,0 +1,12 @@
+Creating a Project
+$ rails new [project-name] -d mysql
+
+Bundler
+Concerns itself with:
+- gemfile
+    + gems and versions of gems to add
+    + our file to edit
+    + tell bundler which gems we need
+    + bundler figures out the dependencies
+- gemfile.lock
+    + tree of gems and dependencies
