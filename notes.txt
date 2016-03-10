@@ -28,3 +28,22 @@ Weird GEM problem
 #gem 'coffee-rails', '~> 4.1.0'
 gem 'coffee-script-source', '1.8.0'
 
+Export schema of database
+$ rake db:schema:dump
+
+-----Migrations-----
+$ rails generate migration [name]
+Migration files have change method OR up and down methods
+See migration files for creating tables and columns
+
+$ rake db:migrate
+- runs all migrations
+
+$ rake db:migrate VERSION=0
+- rolls back all migrations
+
+
+
+-----Models-----
+$ rails generate model [Name]
+- model name is singular
