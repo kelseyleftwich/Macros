@@ -1,10 +1,28 @@
-<table summary="Meal form fields">
-	<tr>
-		<th><%= f.label(:name) %></th>
-		<td><%= f.text_field(:name)%></td>
-	</tr>
-	<tr>
-		<th><%= f.label(:mealtype) %></th>
-		<td><%= f.text_field(:mealtype)%></td>
-	</tr>
-</table>
+
+<%= error_messages_for(@meal) %>
+
+<p>
+	<%= f.label(:mealdate) %>
+</p>
+
+<p>
+<%= f.text_field(:mealdate)%>	
+</p>
+
+<p>
+<%= f.label(:name) %>
+</p>
+
+<p>
+<%= f.text_field(:name)%>	
+</p>
+
+<p>
+<%= f.label(:mealtype) %>
+</p>
+
+<p>
+<%= f.text_field(:mealtype)%>
+</p>
+
+

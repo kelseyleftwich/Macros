@@ -1,2 +1,36 @@
-<h1>Meals#show</h1>
-<p>Find me in app/views/meals/show.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<table class="table table-striped">
+	
+		<tr>
+			<th>Date</th>
+			<td>[Date]</td>
+		</tr>
+		<tr>
+			<th>Meal</th>
+			<td><%= @meal.name %></td>
+		</tr>
+		<tr>
+			<th>Type</th>
+			<td><%= @meal.name %></td>
+		</tr>
+		<tr>
+			<th>Macros</th>
+			<td>
+				<ul>
+					<li>Carbs: </li>
+					<li>Protein: </li>
+					<li>Fat: </li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<th>Date Added</th>
+			<td><%= @meal.created_at.strftime('%m/%d/%Y') %></td>
+		</tr>
+		<tr>
+			<th>Last Updated</th>
+			<td><%= @meal.updated_at.strftime('%m/%d/%Y') %></td>
+		</tr>
+	
+</table>

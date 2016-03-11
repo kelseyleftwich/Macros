@@ -1,2 +1,14 @@
-<h1>Meals#delete</h1>
-<p>Find me in app/views/meals/delete.html.erb</p>
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<h2>Delete Meal</h2>
+
+<div>
+	<%= form_for(:meal, :url => {:action => 'destroy', :id => @meal.id}) do |f| %>
+		<p>Are you sure you want to permanently delete this meal?</p>
+		<p><%= @meal.name %></p>
+		<div>
+			<%= submit_tag("Delete Meal") %>
+		</div>
+
+	<% end %>
+</div>

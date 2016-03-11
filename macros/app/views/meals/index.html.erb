@@ -26,8 +26,9 @@
 				</ul>
 			</td>
 			<td>
-				<a href="#" class="btn btn-default">Edit</a>
-				<a href="#" class="btn btn-danger">Delete</a>
+				<%= link_to("Show", {:action => 'show', :id => meal.id }, :class => 'btn btn-default') %>
+				<%= link_to("Edit", {:action => 'edit', :id => meal.id }, :class => 'btn btn-default') %>
+				<%= link_to("Delete", {:action => 'delete', :id => meal.id }, :class => 'btn btn-danger') %>
 			</td>
 		</tr>
 		<% end %>
