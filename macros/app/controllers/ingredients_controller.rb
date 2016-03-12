@@ -1,4 +1,4 @@
-class IngredientController < ApplicationController
+class IngredientsController < ApplicationController
   def delete
   end
 
@@ -6,6 +6,7 @@ class IngredientController < ApplicationController
   end
 
   def index
+    @ingredients = Ingredient.all
   end
 
   def new

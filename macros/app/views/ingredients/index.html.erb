@@ -1,0 +1,22 @@
+<p>
+	<%= link_to("Add Ingredient", {:action => 'new'}, :class => 'btn btn-primary') %>
+</p>
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Name</th>
+			<th>Carbs</th>
+			<th>Fat</th>
+			<th>Protein</th>
+			<th>&nbsp;</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @ingredients.each do |ingredient| %>
+		<tr>
+			<td>
+				<%= ingredient.name %>
+			</td>
+		</tr>
+	</tbody>
+</table>

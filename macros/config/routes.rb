@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  get 'ingredient/delete'
+  get 'ingredients/delete'
 
-  get 'ingredient/edit'
+  get 'ingredients/edit'
 
-  get 'ingredient/index'
+  get 'ingredients/index'
 
-  get 'ingredient/new'
+  get 'ingredients/new'
 
-  get 'ingredient/show'
+  get 'ingredients/show'
 
   get 'meals/index'
 
