@@ -11,7 +11,16 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160311154026) do
+ActiveRecord::Schema.define(version: 20160312154301) do
+
+  create_table "ingredients", force: :cascade do |t|
+    t.string   "name",       limit: 25
+    t.integer  "carbs",      limit: 4,  default: 0
+    t.integer  "fat",        limit: 4,  default: 0
+    t.integer  "protein",    limit: 4,  default: 0
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
+  end
 
   create_table "meals", force: :cascade do |t|
     t.string   "name",       limit: 25
