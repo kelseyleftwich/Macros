@@ -45,7 +45,7 @@ class MealsController < ApplicationController
     # Save the object
     if @meal.save
       # If save succeeds, redirect to the index action
-      flash[:notice] = "Meal created successfully."
+      flash[:notice] = "Meal saved successfully."
       redirect_to(:action => 'index')
     else
       # If save fails, redisplay the form so user can fix problems

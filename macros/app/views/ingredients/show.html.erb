@@ -1,0 +1,37 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<table class="table table-striped">
+	<tr>
+		<th>Name</th>
+		<td><%= @ingredient.name %></td>
+	</tr>
+	<tr>
+		<th>Ounces</th>
+		<td><%= format_value(@ingredient.ounces) %></td>
+	</tr>
+	<tr>
+		<th>Grams</th>
+		<td><%= format_value(@ingredient.grams) %></td>
+	</tr>
+	<tr>
+		<th>Carbs</th>
+		<td><%= @ingredient.carbs %></td>
+	</tr>
+	<tr>
+		<th>Fat</th>
+		<td><%= @ingredient.fat %></td>
+	</tr>
+	<tr>
+		<th>Protein</th>
+		<td><%= @ingredient.protein %></td>
+	</tr>
+	<tr>
+		<th>Date Added</th>
+		<td><%= @ingredient.created_at.strftime('%m/%d/%Y') %></td>
+	</tr>
+	<tr>
+		<th>Last Updated</th>
+		<td><%= @ingredient.updated_at.strftime('%m/%d/%Y') %></td>
+	</tr>
+</tr>
+</table>

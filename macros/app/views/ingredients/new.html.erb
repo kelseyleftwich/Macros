@@ -1,0 +1,19 @@
+<%= link_to("<< Back to List", {:action => 'index'}, :class => 'back-link') %>
+
+<h2>Add Ingredient</h2>
+
+<div>
+	<%= form_for(:ingredient, 
+		:url => {:action => 'create'},
+		:html => {:class => 'form-horizontal'}
+		) do |f| %>
+
+		<%= render(:partial => "form", :locals => {:f => f}) %>
+
+		<div class="form-buttons">
+			<%= submit_tag("Add Ingredient") %>
+		</div>
+
+		<% end %>
+</div>
+
