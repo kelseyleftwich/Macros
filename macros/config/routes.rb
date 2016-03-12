@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  get 'ingredient/delete'
+
+  get 'ingredient/edit'
+
+  get 'ingredient/index'
+
+  get 'ingredient/new'
+
+  get 'ingredient/show'
+
   get 'meals/index'
 
   get 'meals/delete'
