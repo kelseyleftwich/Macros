@@ -15,7 +15,7 @@
 	<tbody>
 		<% @meals.each do |meal| %>
 		<tr>
-			<td>[Date]</td>
+			<td><%= meal.mealdate.strftime("%m/%d/%Y") %></td>
 			<td><%= meal.name %></td>
 			<td><%= meal.mealtype %></td>
 			<td>
